@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["Context","The context which within libnotify operates."],["Notification","A passive pop-up notification"]],"enum":[["ContextCreationError","Error that can happen on context creation"],["NotificationCreationError",""]]});
