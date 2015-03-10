@@ -43,8 +43,20 @@
     <section id='main' class="content mod">
 <h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>libnotify</a><wbr></span><span class='out-of-band'><a href='stability.html'>[stability]</a> <span id='render-detail'>
             <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-0' href='../src/libnotify/lib.rs.html#1-131'>[src]</a></span></h1>
-<h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+        </span><a id='src-0' href='../src/libnotify/lib.rs.html#1-145'>[src]</a></span></h1>
+<div class='docblock'><p>Rustic bindings to <a href="https://developer.gnome.org/libnotify/">libnotify</a></p>
+<pre id='rust-example-rendered' class='rust '>
+<span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>libnotify</span>;
+
+<span class='kw'>fn</span> <span class='ident'>main</span>() {
+   <span class='kw'>let</span> <span class='ident'>notify</span> <span class='op'>=</span> <span class='ident'>libnotify</span>::<span class='ident'>Context</span>::<span class='ident'>new</span>(<span class='string'>&quot;hello&quot;</span>).<span class='ident'>unwrap</span>();
+   <span class='kw'>let</span> <span class='ident'>n</span> <span class='op'>=</span> <span class='ident'>notify</span>.<span class='ident'>new_notification</span>(<span class='string'>&quot;This is the summary.&quot;</span>,
+                                   <span class='prelude-val'>Some</span>(<span class='string'>&quot;This is the optional body text.&quot;</span>),
+                                   <span class='prelude-val'>None</span>).<span class='ident'>unwrap</span>();
+   <span class='ident'>n</span>.<span class='ident'>show</span>().<span class='ident'>unwrap</span>();
+}
+</pre>
+</div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
 <table>
                     <tr>
                         <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Context.html'
