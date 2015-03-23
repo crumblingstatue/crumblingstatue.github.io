@@ -1,0 +1,1779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `xlib` mod in crate `x11`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, xlib">
+
+    <title>x11::xlib - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'><a href='../index.html'>x11</a></p><script>window.sidebarCurrent = {name: 'xlib', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content mod">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>x11</a>::<wbr><a class='mod' href=''>xlib</a><wbr></span><span class='out-of-band'><span id='render-detail'>
+            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
+        </span><a id='src-289' href='../../src/x11/xlib.rs.html#5-1357'>[src]</a></span></h1>
+<h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.AspectRatio.html'
+                               title='x11::xlib::AspectRatio'>AspectRatio</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Display.html'
+                               title='x11::xlib::Display'>Display</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Screen.html'
+                               title='x11::xlib::Screen'>Screen</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.Visual.html'
+                               title='x11::xlib::Visual'>Visual</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.XAnyEvent.html'
+                               title='x11::xlib::XAnyEvent'>XAnyEvent</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.XClientMessageData.html'
+                               title='x11::xlib::XClientMessageData'>XClientMessageData</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.XClientMessageEvent.html'
+                               title='x11::xlib::XClientMessageEvent'>XClientMessageEvent</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.XColor.html'
+                               title='x11::xlib::XColor'>XColor</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.XConfigureEvent.html'
+                               title='x11::xlib::XConfigureEvent'>XConfigureEvent</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.XDestroyWindowEvent.html'
+                               title='x11::xlib::XDestroyWindowEvent'>XDestroyWindowEvent</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.XEvent.html'
+                               title='x11::xlib::XEvent'>XEvent</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.XExposeEvent.html'
+                               title='x11::xlib::XExposeEvent'>XExposeEvent</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.XGCValues.html'
+                               title='x11::xlib::XGCValues'>XGCValues</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.XModifierKeymap.html'
+                               title='x11::xlib::XModifierKeymap'>XModifierKeymap</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.XRectangle.html'
+                               title='x11::xlib::XRectangle'>XRectangle</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.XSetWindowAttributes.html'
+                               title='x11::xlib::XSetWindowAttributes'>XSetWindowAttributes</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.XSizeHints.html'
+                               title='x11::xlib::XSizeHints'>XSizeHints</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.XTextProperty.html'
+                               title='x11::xlib::XTextProperty'>XTextProperty</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.XVisualInfo.html'
+                               title='x11::xlib::XVisualInfo'>XVisualInfo</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='struct' href='struct.XWindowAttributes.html'
+                               title='x11::xlib::XWindowAttributes'>XWindowAttributes</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                </table><h2 id='constants' class='section-header'><a href="#constants">Constants</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.AllocAll.html'
+                               title='x11::xlib::AllocAll'>AllocAll</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.AllocNone.html'
+                               title='x11::xlib::AllocNone'>AllocNone</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.BadAccess.html'
+                               title='x11::xlib::BadAccess'>BadAccess</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.BadAlloc.html'
+                               title='x11::xlib::BadAlloc'>BadAlloc</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.BadAtom.html'
+                               title='x11::xlib::BadAtom'>BadAtom</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.BadColor.html'
+                               title='x11::xlib::BadColor'>BadColor</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.BadCursor.html'
+                               title='x11::xlib::BadCursor'>BadCursor</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.BadDrawable.html'
+                               title='x11::xlib::BadDrawable'>BadDrawable</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.BadFont.html'
+                               title='x11::xlib::BadFont'>BadFont</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.BadGC.html'
+                               title='x11::xlib::BadGC'>BadGC</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.BadIDChoice.html'
+                               title='x11::xlib::BadIDChoice'>BadIDChoice</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.BadImplementation.html'
+                               title='x11::xlib::BadImplementation'>BadImplementation</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.BadLength.html'
+                               title='x11::xlib::BadLength'>BadLength</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.BadMatch.html'
+                               title='x11::xlib::BadMatch'>BadMatch</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.BadName.html'
+                               title='x11::xlib::BadName'>BadName</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.BadPixmap.html'
+                               title='x11::xlib::BadPixmap'>BadPixmap</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.BadRequest.html'
+                               title='x11::xlib::BadRequest'>BadRequest</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.BadValue.html'
+                               title='x11::xlib::BadValue'>BadValue</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.BadWindow.html'
+                               title='x11::xlib::BadWindow'>BadWindow</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.Button1MotionMask.html'
+                               title='x11::xlib::Button1MotionMask'>Button1MotionMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.Button2MotionMask.html'
+                               title='x11::xlib::Button2MotionMask'>Button2MotionMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.Button3MotionMask.html'
+                               title='x11::xlib::Button3MotionMask'>Button3MotionMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.Button4MotionMask.html'
+                               title='x11::xlib::Button4MotionMask'>Button4MotionMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.Button5MotionMask.html'
+                               title='x11::xlib::Button5MotionMask'>Button5MotionMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.ButtonMotionMask.html'
+                               title='x11::xlib::ButtonMotionMask'>ButtonMotionMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.ButtonPress.html'
+                               title='x11::xlib::ButtonPress'>ButtonPress</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.ButtonPressMask.html'
+                               title='x11::xlib::ButtonPressMask'>ButtonPressMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.ButtonRelease.html'
+                               title='x11::xlib::ButtonRelease'>ButtonRelease</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.ButtonReleaseMask.html'
+                               title='x11::xlib::ButtonReleaseMask'>ButtonReleaseMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.CWBackPixel.html'
+                               title='x11::xlib::CWBackPixel'>CWBackPixel</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.CWBackPixmap.html'
+                               title='x11::xlib::CWBackPixmap'>CWBackPixmap</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.CWBackingPixel.html'
+                               title='x11::xlib::CWBackingPixel'>CWBackingPixel</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.CWBackingPlanes.html'
+                               title='x11::xlib::CWBackingPlanes'>CWBackingPlanes</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.CWBackingStore.html'
+                               title='x11::xlib::CWBackingStore'>CWBackingStore</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.CWBitGravity.html'
+                               title='x11::xlib::CWBitGravity'>CWBitGravity</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.CWBorderPixel.html'
+                               title='x11::xlib::CWBorderPixel'>CWBorderPixel</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.CWBorderPixmap.html'
+                               title='x11::xlib::CWBorderPixmap'>CWBorderPixmap</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.CWColormap.html'
+                               title='x11::xlib::CWColormap'>CWColormap</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.CWCursor.html'
+                               title='x11::xlib::CWCursor'>CWCursor</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.CWDontPropagate.html'
+                               title='x11::xlib::CWDontPropagate'>CWDontPropagate</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.CWEventMask.html'
+                               title='x11::xlib::CWEventMask'>CWEventMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.CWOverrideRedirect.html'
+                               title='x11::xlib::CWOverrideRedirect'>CWOverrideRedirect</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.CWSaveUnder.html'
+                               title='x11::xlib::CWSaveUnder'>CWSaveUnder</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.CWWinGravity.html'
+                               title='x11::xlib::CWWinGravity'>CWWinGravity</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.CirculateNotify.html'
+                               title='x11::xlib::CirculateNotify'>CirculateNotify</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.CirculateRequest.html'
+                               title='x11::xlib::CirculateRequest'>CirculateRequest</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.ClientMessage.html'
+                               title='x11::xlib::ClientMessage'>ClientMessage</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.ColormapChangeMask.html'
+                               title='x11::xlib::ColormapChangeMask'>ColormapChangeMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.ColormapNotify.html'
+                               title='x11::xlib::ColormapNotify'>ColormapNotify</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.ConfigureNotify.html'
+                               title='x11::xlib::ConfigureNotify'>ConfigureNotify</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.ConfigureRequest.html'
+                               title='x11::xlib::ConfigureRequest'>ConfigureRequest</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.CreateNotify.html'
+                               title='x11::xlib::CreateNotify'>CreateNotify</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.DestroyNotify.html'
+                               title='x11::xlib::DestroyNotify'>DestroyNotify</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.DirectColor.html'
+                               title='x11::xlib::DirectColor'>DirectColor</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.DoBlue.html'
+                               title='x11::xlib::DoBlue'>DoBlue</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.DoGreen.html'
+                               title='x11::xlib::DoGreen'>DoGreen</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.DoRed.html'
+                               title='x11::xlib::DoRed'>DoRed</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.EnterNotify.html'
+                               title='x11::xlib::EnterNotify'>EnterNotify</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.EnterWindowMask.html'
+                               title='x11::xlib::EnterWindowMask'>EnterWindowMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.Expose.html'
+                               title='x11::xlib::Expose'>Expose</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.ExposureMask.html'
+                               title='x11::xlib::ExposureMask'>ExposureMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.FirstExtensionError.html'
+                               title='x11::xlib::FirstExtensionError'>FirstExtensionError</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.FocusChangeMask.html'
+                               title='x11::xlib::FocusChangeMask'>FocusChangeMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.FocusIn.html'
+                               title='x11::xlib::FocusIn'>FocusIn</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.FocusOut.html'
+                               title='x11::xlib::FocusOut'>FocusOut</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.GraphicsExpose.html'
+                               title='x11::xlib::GraphicsExpose'>GraphicsExpose</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.GravityNotify.html'
+                               title='x11::xlib::GravityNotify'>GravityNotify</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.GrayScale.html'
+                               title='x11::xlib::GrayScale'>GrayScale</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.InputOnly.html'
+                               title='x11::xlib::InputOnly'>InputOnly</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.InputOutput.html'
+                               title='x11::xlib::InputOutput'>InputOutput</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.IsUnmapped.html'
+                               title='x11::xlib::IsUnmapped'>IsUnmapped</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.IsUnviewable.html'
+                               title='x11::xlib::IsUnviewable'>IsUnviewable</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.IsViewable.html'
+                               title='x11::xlib::IsViewable'>IsViewable</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.KeyPress.html'
+                               title='x11::xlib::KeyPress'>KeyPress</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.KeyPressMask.html'
+                               title='x11::xlib::KeyPressMask'>KeyPressMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.KeyRelease.html'
+                               title='x11::xlib::KeyRelease'>KeyRelease</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.KeyReleaseMask.html'
+                               title='x11::xlib::KeyReleaseMask'>KeyReleaseMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.KeymapNotify.html'
+                               title='x11::xlib::KeymapNotify'>KeymapNotify</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.KeymapStateMask.html'
+                               title='x11::xlib::KeymapStateMask'>KeymapStateMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.LastExtensionError.html'
+                               title='x11::xlib::LastExtensionError'>LastExtensionError</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.LeaveNotify.html'
+                               title='x11::xlib::LeaveNotify'>LeaveNotify</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.LeaveWindowMask.html'
+                               title='x11::xlib::LeaveWindowMask'>LeaveWindowMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.MapNotify.html'
+                               title='x11::xlib::MapNotify'>MapNotify</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.MapRequest.html'
+                               title='x11::xlib::MapRequest'>MapRequest</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.MappingNotify.html'
+                               title='x11::xlib::MappingNotify'>MappingNotify</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.MotionNotify.html'
+                               title='x11::xlib::MotionNotify'>MotionNotify</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.NoEventMask.html'
+                               title='x11::xlib::NoEventMask'>NoEventMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.NoExpose.html'
+                               title='x11::xlib::NoExpose'>NoExpose</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.OwnerGrabButtonMask.html'
+                               title='x11::xlib::OwnerGrabButtonMask'>OwnerGrabButtonMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.PAllHints.html'
+                               title='x11::xlib::PAllHints'>PAllHints</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.PAspect.html'
+                               title='x11::xlib::PAspect'>PAspect</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.PBaseSize.html'
+                               title='x11::xlib::PBaseSize'>PBaseSize</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.PMaxSize.html'
+                               title='x11::xlib::PMaxSize'>PMaxSize</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.PMinSize.html'
+                               title='x11::xlib::PMinSize'>PMinSize</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.PPosition.html'
+                               title='x11::xlib::PPosition'>PPosition</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.PResizeInc.html'
+                               title='x11::xlib::PResizeInc'>PResizeInc</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.PSize.html'
+                               title='x11::xlib::PSize'>PSize</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.PWinGravity.html'
+                               title='x11::xlib::PWinGravity'>PWinGravity</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.PointerMotionHintMask.html'
+                               title='x11::xlib::PointerMotionHintMask'>PointerMotionHintMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.PointerMotionMask.html'
+                               title='x11::xlib::PointerMotionMask'>PointerMotionMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.PropertyChangeMask.html'
+                               title='x11::xlib::PropertyChangeMask'>PropertyChangeMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.PropertyNotify.html'
+                               title='x11::xlib::PropertyNotify'>PropertyNotify</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.PseudoColor.html'
+                               title='x11::xlib::PseudoColor'>PseudoColor</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.ReparentNotify.html'
+                               title='x11::xlib::ReparentNotify'>ReparentNotify</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.ResizeRedirectMask.html'
+                               title='x11::xlib::ResizeRedirectMask'>ResizeRedirectMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.ResizeRequest.html'
+                               title='x11::xlib::ResizeRequest'>ResizeRequest</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.SelectionClear.html'
+                               title='x11::xlib::SelectionClear'>SelectionClear</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.SelectionNotify.html'
+                               title='x11::xlib::SelectionNotify'>SelectionNotify</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.SelectionRequest.html'
+                               title='x11::xlib::SelectionRequest'>SelectionRequest</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.StaticColor.html'
+                               title='x11::xlib::StaticColor'>StaticColor</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.StaticGray.html'
+                               title='x11::xlib::StaticGray'>StaticGray</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.StructureNotifyMask.html'
+                               title='x11::xlib::StructureNotifyMask'>StructureNotifyMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.SubstructureNotifyMask.html'
+                               title='x11::xlib::SubstructureNotifyMask'>SubstructureNotifyMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.SubstructureRedirectMask.html'
+                               title='x11::xlib::SubstructureRedirectMask'>SubstructureRedirectMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.Success.html'
+                               title='x11::xlib::Success'>Success</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.TrueColor.html'
+                               title='x11::xlib::TrueColor'>TrueColor</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.USPosition.html'
+                               title='x11::xlib::USPosition'>USPosition</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.USSize.html'
+                               title='x11::xlib::USSize'>USSize</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.UnmapNotify.html'
+                               title='x11::xlib::UnmapNotify'>UnmapNotify</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.Unsorted.html'
+                               title='x11::xlib::Unsorted'>Unsorted</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.VisibilityChangeMask.html'
+                               title='x11::xlib::VisibilityChangeMask'>VisibilityChangeMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.VisibilityNotify.html'
+                               title='x11::xlib::VisibilityNotify'>VisibilityNotify</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.VisualAllMask.html'
+                               title='x11::xlib::VisualAllMask'>VisualAllMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.VisualBitsPerRGBMask.html'
+                               title='x11::xlib::VisualBitsPerRGBMask'>VisualBitsPerRGBMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.VisualBlueMaskMask.html'
+                               title='x11::xlib::VisualBlueMaskMask'>VisualBlueMaskMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.VisualClassMask.html'
+                               title='x11::xlib::VisualClassMask'>VisualClassMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.VisualColormapSizeMask.html'
+                               title='x11::xlib::VisualColormapSizeMask'>VisualColormapSizeMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.VisualDepthMask.html'
+                               title='x11::xlib::VisualDepthMask'>VisualDepthMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.VisualGreenMaskMask.html'
+                               title='x11::xlib::VisualGreenMaskMask'>VisualGreenMaskMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.VisualIDMask.html'
+                               title='x11::xlib::VisualIDMask'>VisualIDMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.VisualNoMask.html'
+                               title='x11::xlib::VisualNoMask'>VisualNoMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.VisualRedMaskMask.html'
+                               title='x11::xlib::VisualRedMaskMask'>VisualRedMaskMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.VisualScreenMask.html'
+                               title='x11::xlib::VisualScreenMask'>VisualScreenMask</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_ARC.html'
+                               title='x11::xlib::XA_ARC'>XA_ARC</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_ATOM.html'
+                               title='x11::xlib::XA_ATOM'>XA_ATOM</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_BITMAP.html'
+                               title='x11::xlib::XA_BITMAP'>XA_BITMAP</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_CAP_HEIGHT.html'
+                               title='x11::xlib::XA_CAP_HEIGHT'>XA_CAP_HEIGHT</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_CARDINAL.html'
+                               title='x11::xlib::XA_CARDINAL'>XA_CARDINAL</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_COLORMAP.html'
+                               title='x11::xlib::XA_COLORMAP'>XA_COLORMAP</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_COPYRIGHT.html'
+                               title='x11::xlib::XA_COPYRIGHT'>XA_COPYRIGHT</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_CURSOR.html'
+                               title='x11::xlib::XA_CURSOR'>XA_CURSOR</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_CUT_BUFFER0.html'
+                               title='x11::xlib::XA_CUT_BUFFER0'>XA_CUT_BUFFER0</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_CUT_BUFFER1.html'
+                               title='x11::xlib::XA_CUT_BUFFER1'>XA_CUT_BUFFER1</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_CUT_BUFFER2.html'
+                               title='x11::xlib::XA_CUT_BUFFER2'>XA_CUT_BUFFER2</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_CUT_BUFFER3.html'
+                               title='x11::xlib::XA_CUT_BUFFER3'>XA_CUT_BUFFER3</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_CUT_BUFFER4.html'
+                               title='x11::xlib::XA_CUT_BUFFER4'>XA_CUT_BUFFER4</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_CUT_BUFFER5.html'
+                               title='x11::xlib::XA_CUT_BUFFER5'>XA_CUT_BUFFER5</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_CUT_BUFFER6.html'
+                               title='x11::xlib::XA_CUT_BUFFER6'>XA_CUT_BUFFER6</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_CUT_BUFFER7.html'
+                               title='x11::xlib::XA_CUT_BUFFER7'>XA_CUT_BUFFER7</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_DRAWABLE.html'
+                               title='x11::xlib::XA_DRAWABLE'>XA_DRAWABLE</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_END_SPACE.html'
+                               title='x11::xlib::XA_END_SPACE'>XA_END_SPACE</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_FAMILY_NAME.html'
+                               title='x11::xlib::XA_FAMILY_NAME'>XA_FAMILY_NAME</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_FONT.html'
+                               title='x11::xlib::XA_FONT'>XA_FONT</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_FONT_NAME.html'
+                               title='x11::xlib::XA_FONT_NAME'>XA_FONT_NAME</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_FULL_NAME.html'
+                               title='x11::xlib::XA_FULL_NAME'>XA_FULL_NAME</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_INTEGER.html'
+                               title='x11::xlib::XA_INTEGER'>XA_INTEGER</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_ITALIC_ANGLE.html'
+                               title='x11::xlib::XA_ITALIC_ANGLE'>XA_ITALIC_ANGLE</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_MAX_SPACE.html'
+                               title='x11::xlib::XA_MAX_SPACE'>XA_MAX_SPACE</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_MIN_SPACE.html'
+                               title='x11::xlib::XA_MIN_SPACE'>XA_MIN_SPACE</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_NORM_SPACE.html'
+                               title='x11::xlib::XA_NORM_SPACE'>XA_NORM_SPACE</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_NOTICE.html'
+                               title='x11::xlib::XA_NOTICE'>XA_NOTICE</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_PIXMAP.html'
+                               title='x11::xlib::XA_PIXMAP'>XA_PIXMAP</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_POINT.html'
+                               title='x11::xlib::XA_POINT'>XA_POINT</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_POINT_SIZE.html'
+                               title='x11::xlib::XA_POINT_SIZE'>XA_POINT_SIZE</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_PRIMARY.html'
+                               title='x11::xlib::XA_PRIMARY'>XA_PRIMARY</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_QUAD_WIDTH.html'
+                               title='x11::xlib::XA_QUAD_WIDTH'>XA_QUAD_WIDTH</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_RECTANGLE.html'
+                               title='x11::xlib::XA_RECTANGLE'>XA_RECTANGLE</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_RESOLUTION.html'
+                               title='x11::xlib::XA_RESOLUTION'>XA_RESOLUTION</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_RESOURCE_MANAGER.html'
+                               title='x11::xlib::XA_RESOURCE_MANAGER'>XA_RESOURCE_MANAGER</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_RGB_BEST_MAP.html'
+                               title='x11::xlib::XA_RGB_BEST_MAP'>XA_RGB_BEST_MAP</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_RGB_BLUE_MAP.html'
+                               title='x11::xlib::XA_RGB_BLUE_MAP'>XA_RGB_BLUE_MAP</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_RGB_COLOR_MAP.html'
+                               title='x11::xlib::XA_RGB_COLOR_MAP'>XA_RGB_COLOR_MAP</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_RGB_DEFAULT_MAP.html'
+                               title='x11::xlib::XA_RGB_DEFAULT_MAP'>XA_RGB_DEFAULT_MAP</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_RGB_GRAY_MAP.html'
+                               title='x11::xlib::XA_RGB_GRAY_MAP'>XA_RGB_GRAY_MAP</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_RGB_GREEN_MAP.html'
+                               title='x11::xlib::XA_RGB_GREEN_MAP'>XA_RGB_GREEN_MAP</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_RGB_RED_MAP.html'
+                               title='x11::xlib::XA_RGB_RED_MAP'>XA_RGB_RED_MAP</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_SECONDARY.html'
+                               title='x11::xlib::XA_SECONDARY'>XA_SECONDARY</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_STRIKEOUT_ASCENT.html'
+                               title='x11::xlib::XA_STRIKEOUT_ASCENT'>XA_STRIKEOUT_ASCENT</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_STRIKEOUT_DESCENT.html'
+                               title='x11::xlib::XA_STRIKEOUT_DESCENT'>XA_STRIKEOUT_DESCENT</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_STRING.html'
+                               title='x11::xlib::XA_STRING'>XA_STRING</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_SUBSCRIPT_X.html'
+                               title='x11::xlib::XA_SUBSCRIPT_X'>XA_SUBSCRIPT_X</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_SUBSCRIPT_Y.html'
+                               title='x11::xlib::XA_SUBSCRIPT_Y'>XA_SUBSCRIPT_Y</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_SUPERSCRIPT_X.html'
+                               title='x11::xlib::XA_SUPERSCRIPT_X'>XA_SUPERSCRIPT_X</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_SUPERSCRIPT_Y.html'
+                               title='x11::xlib::XA_SUPERSCRIPT_Y'>XA_SUPERSCRIPT_Y</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_UNDERLINE_POSITION.html'
+                               title='x11::xlib::XA_UNDERLINE_POSITION'>XA_UNDERLINE_POSITION</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_UNDERLINE_THICKNESS.html'
+                               title='x11::xlib::XA_UNDERLINE_THICKNESS'>XA_UNDERLINE_THICKNESS</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_VISUALID.html'
+                               title='x11::xlib::XA_VISUALID'>XA_VISUALID</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_WEIGHT.html'
+                               title='x11::xlib::XA_WEIGHT'>XA_WEIGHT</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_WINDOW.html'
+                               title='x11::xlib::XA_WINDOW'>XA_WINDOW</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_WM_CLASS.html'
+                               title='x11::xlib::XA_WM_CLASS'>XA_WM_CLASS</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_WM_CLIENT_MACHINE.html'
+                               title='x11::xlib::XA_WM_CLIENT_MACHINE'>XA_WM_CLIENT_MACHINE</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_WM_COMMAND.html'
+                               title='x11::xlib::XA_WM_COMMAND'>XA_WM_COMMAND</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_WM_HINTS.html'
+                               title='x11::xlib::XA_WM_HINTS'>XA_WM_HINTS</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_WM_ICON_NAME.html'
+                               title='x11::xlib::XA_WM_ICON_NAME'>XA_WM_ICON_NAME</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_WM_ICON_SIZE.html'
+                               title='x11::xlib::XA_WM_ICON_SIZE'>XA_WM_ICON_SIZE</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_WM_NAME.html'
+                               title='x11::xlib::XA_WM_NAME'>XA_WM_NAME</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_WM_NORMAL_HINTS.html'
+                               title='x11::xlib::XA_WM_NORMAL_HINTS'>XA_WM_NORMAL_HINTS</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_WM_SIZE_HINTS.html'
+                               title='x11::xlib::XA_WM_SIZE_HINTS'>XA_WM_SIZE_HINTS</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_WM_TRANSIENT_FOR.html'
+                               title='x11::xlib::XA_WM_TRANSIENT_FOR'>XA_WM_TRANSIENT_FOR</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_WM_ZOOM_HINTS.html'
+                               title='x11::xlib::XA_WM_ZOOM_HINTS'>XA_WM_ZOOM_HINTS</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.XA_X_HEIGHT.html'
+                               title='x11::xlib::XA_X_HEIGHT'>XA_X_HEIGHT</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.YSorted.html'
+                               title='x11::xlib::YSorted'>YSorted</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.YXBanded.html'
+                               title='x11::xlib::YXBanded'>YXBanded</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='constant' href='constant.YXSorted.html'
+                               title='x11::xlib::YXSorted'>YXSorted</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                </table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XAllocColor.html'
+                               title='x11::xlib::XAllocColor'>XAllocColor</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XBlackPixel.html'
+                               title='x11::xlib::XBlackPixel'>XBlackPixel</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XCloseDisplay.html'
+                               title='x11::xlib::XCloseDisplay'>XCloseDisplay</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XCreateColormap.html'
+                               title='x11::xlib::XCreateColormap'>XCreateColormap</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XCreateGC.html'
+                               title='x11::xlib::XCreateGC'>XCreateGC</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XCreateSimpleWindow.html'
+                               title='x11::xlib::XCreateSimpleWindow'>XCreateSimpleWindow</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XCreateWindow.html'
+                               title='x11::xlib::XCreateWindow'>XCreateWindow</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XDefaultColormap.html'
+                               title='x11::xlib::XDefaultColormap'>XDefaultColormap</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XDefaultScreen.html'
+                               title='x11::xlib::XDefaultScreen'>XDefaultScreen</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XDefaultVisual.html'
+                               title='x11::xlib::XDefaultVisual'>XDefaultVisual</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XDestroyWindow.html'
+                               title='x11::xlib::XDestroyWindow'>XDestroyWindow</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XDrawRectangle.html'
+                               title='x11::xlib::XDrawRectangle'>XDrawRectangle</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XFetchName.html'
+                               title='x11::xlib::XFetchName'>XFetchName</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XFillRectangle.html'
+                               title='x11::xlib::XFillRectangle'>XFillRectangle</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XFlush.html'
+                               title='x11::xlib::XFlush'>XFlush</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XFree.html'
+                               title='x11::xlib::XFree'>XFree</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XFreeColormap.html'
+                               title='x11::xlib::XFreeColormap'>XFreeColormap</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XFreeGC.html'
+                               title='x11::xlib::XFreeGC'>XFreeGC</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XGetGeometry.html'
+                               title='x11::xlib::XGetGeometry'>XGetGeometry</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XGetVisualInfo.html'
+                               title='x11::xlib::XGetVisualInfo'>XGetVisualInfo</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XGetWMName.html'
+                               title='x11::xlib::XGetWMName'>XGetWMName</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XGetWindowAttributes.html'
+                               title='x11::xlib::XGetWindowAttributes'>XGetWindowAttributes</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XGetWindowProperty.html'
+                               title='x11::xlib::XGetWindowProperty'>XGetWindowProperty</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XInternAtom.html'
+                               title='x11::xlib::XInternAtom'>XInternAtom</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XMapWindow.html'
+                               title='x11::xlib::XMapWindow'>XMapWindow</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XMoveWindow.html'
+                               title='x11::xlib::XMoveWindow'>XMoveWindow</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XNextEvent.html'
+                               title='x11::xlib::XNextEvent'>XNextEvent</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XOpenDisplay.html'
+                               title='x11::xlib::XOpenDisplay'>XOpenDisplay</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XPending.html'
+                               title='x11::xlib::XPending'>XPending</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XQueryTree.html'
+                               title='x11::xlib::XQueryTree'>XQueryTree</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XResizeWindow.html'
+                               title='x11::xlib::XResizeWindow'>XResizeWindow</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XRootWindow.html'
+                               title='x11::xlib::XRootWindow'>XRootWindow</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XScreenCount.html'
+                               title='x11::xlib::XScreenCount'>XScreenCount</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XSendEvent.html'
+                               title='x11::xlib::XSendEvent'>XSendEvent</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XSetClipRectangles.html'
+                               title='x11::xlib::XSetClipRectangles'>XSetClipRectangles</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XSetForeground.html'
+                               title='x11::xlib::XSetForeground'>XSetForeground</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XSetWMNormalHints.html'
+                               title='x11::xlib::XSetWMNormalHints'>XSetWMNormalHints</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XSetWMProtocols.html'
+                               title='x11::xlib::XSetWMProtocols'>XSetWMProtocols</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XStoreName.html'
+                               title='x11::xlib::XStoreName'>XStoreName</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XUnmapWindow.html'
+                               title='x11::xlib::XUnmapWindow'>XUnmapWindow</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XVisualIDFromVisual.html'
+                               title='x11::xlib::XVisualIDFromVisual'>XVisualIDFromVisual</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='fn' href='fn.XWhitePixel.html'
+                               title='x11::xlib::XWhitePixel'>XWhitePixel</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                </table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
+<table>
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='type' href='type.Atom.html'
+                               title='x11::xlib::Atom'>Atom</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='type' href='type.Bool.html'
+                               title='x11::xlib::Bool'>Bool</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='type' href='type.Colormap.html'
+                               title='x11::xlib::Colormap'>Colormap</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='type' href='type.Cursor.html'
+                               title='x11::xlib::Cursor'>Cursor</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='type' href='type.Drawable.html'
+                               title='x11::xlib::Drawable'>Drawable</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='type' href='type.Font.html'
+                               title='x11::xlib::Font'>Font</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='type' href='type.GC.html'
+                               title='x11::xlib::GC'>GC</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='type' href='type.KeyCode.html'
+                               title='x11::xlib::KeyCode'>KeyCode</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='type' href='type.KeySym.html'
+                               title='x11::xlib::KeySym'>KeySym</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='type' href='type.Pixmap.html'
+                               title='x11::xlib::Pixmap'>Pixmap</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='type' href='type.Status.html'
+                               title='x11::xlib::Status'>Status</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='type' href='type.VisualID.html'
+                               title='x11::xlib::VisualID'>VisualID</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='type' href='type.Window.html'
+                               title='x11::xlib::Window'>Window</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                
+                    <tr>
+                        <td><a class='stability Unmarked' title='No stability level'></a><a class='type' href='type.XID.html'
+                               title='x11::xlib::XID'>XID</a></td>
+                        <td class='docblock short'></td>
+                    </tr>
+                </table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "x11";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script async src="../../search-index.js"></script>
+</body>
+</html>

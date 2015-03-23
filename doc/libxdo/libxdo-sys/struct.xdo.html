@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `xdo` struct in crate `libxdo-sys`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, xdo">
+
+    <title>libxdo-sys::xdo - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'><a href='index.html'>libxdo-sys</a></p><script>window.sidebarCurrent = {name: 'xdo', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>libxdo-sys</a>::<wbr><a class='struct' href=''>xdo</a><wbr></span><span class='out-of-band'><span id='render-detail'>
+            <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
+        </span><a id='src-30' href='../src/libxdo-sys/lib.rs.html#31-45'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct xdo {
+    pub xdpy: *mut <a class='struct' href='../x11/xlib/struct.Display.html' title='x11::xlib::Display'>Display</a>,
+    pub display_name: *mut <a class='type' href='../libc/types/os/arch/c95/type.c_char.html' title='libc::types::os::arch::c95::c_char'>c_char</a>,
+    pub charcodes: *mut <a class='struct' href='../libxdo-sys/struct.charcodemap.html' title='libxdo-sys::charcodemap'>charcodemap</a>,
+    pub charcodes_len: <a class='type' href='../libc/types/os/arch/c95/type.c_int.html' title='libc::types::os::arch::c95::c_int'>c_int</a>,
+    pub modmap: *mut <a class='struct' href='../x11/xlib/struct.XModifierKeymap.html' title='x11::xlib::XModifierKeymap'>XModifierKeymap</a>,
+    pub keymap: *mut <a class='type' href='../x11/xlib/type.KeySym.html' title='x11::xlib::KeySym'>KeySym</a>,
+    pub keycode_high: <a class='type' href='../libc/types/os/arch/c95/type.c_int.html' title='libc::types::os::arch::c95::c_int'>c_int</a>,
+    pub keycode_low: <a class='type' href='../libc/types/os/arch/c95/type.c_int.html' title='libc::types::os::arch::c95::c_int'>c_int</a>,
+    pub keysyms_per_keycode: <a class='type' href='../libc/types/os/arch/c95/type.c_int.html' title='libc::types::os::arch::c95::c_int'>c_int</a>,
+    pub close_display_when_freed: <a class='type' href='../libc/types/os/arch/c95/type.c_int.html' title='libc::types::os::arch::c95::c_int'>c_int</a>,
+    pub quiet: <a class='type' href='../libc/types/os/arch/c95/type.c_int.html' title='libc::types::os::arch::c95::c_int'>c_int</a>,
+    pub debug: <a class='type' href='../libc/types/os/arch/c95/type.c_int.html' title='libc::types::os::arch::c95::c_int'>c_int</a>,
+    pub features_mask: <a class='type' href='../libc/types/os/arch/c95/type.c_int.html' title='libc::types::os::arch::c95::c_int'>c_int</a>,
+}</pre><h2 class='fields'>Fields</h2>
+<table><tr><td id='structfield.xdpy'><a class='stability Unmarked' title='No stability level'></a><code>xdpy</code></td><td></td></tr><tr><td id='structfield.display_name'><a class='stability Unmarked' title='No stability level'></a><code>display_name</code></td><td></td></tr><tr><td id='structfield.charcodes'><a class='stability Unmarked' title='No stability level'></a><code>charcodes</code></td><td></td></tr><tr><td id='structfield.charcodes_len'><a class='stability Unmarked' title='No stability level'></a><code>charcodes_len</code></td><td></td></tr><tr><td id='structfield.modmap'><a class='stability Unmarked' title='No stability level'></a><code>modmap</code></td><td></td></tr><tr><td id='structfield.keymap'><a class='stability Unmarked' title='No stability level'></a><code>keymap</code></td><td></td></tr><tr><td id='structfield.keycode_high'><a class='stability Unmarked' title='No stability level'></a><code>keycode_high</code></td><td></td></tr><tr><td id='structfield.keycode_low'><a class='stability Unmarked' title='No stability level'></a><code>keycode_low</code></td><td></td></tr><tr><td id='structfield.keysyms_per_keycode'><a class='stability Unmarked' title='No stability level'></a><code>keysyms_per_keycode</code></td><td></td></tr><tr><td id='structfield.close_display_when_freed'><a class='stability Unmarked' title='No stability level'></a><code>close_display_when_freed</code></td><td></td></tr><tr><td id='structfield.quiet'><a class='stability Unmarked' title='No stability level'></a><code>quiet</code></td><td></td></tr><tr><td id='structfield.debug'><a class='stability Unmarked' title='No stability level'></a><code>debug</code></td><td></td></tr><tr><td id='structfield.features_mask'><a class='stability Unmarked' title='No stability level'></a><code>features_mask</code></td><td></td></tr></table></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "libxdo-sys";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>
