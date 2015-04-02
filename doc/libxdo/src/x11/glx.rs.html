@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="rustdoc">
-    <meta name="description" content="Source to the Rust file `/home/snake/.cargo/registry/src/github.com-1ecc6299db9ec823/x11-0.0.15/src/glx.rs`.">
+    <meta name="description" content="Source to the Rust file `/home/snake/.cargo/registry/src/github.com-1ecc6299db9ec823/x11-0.0.21/src/glx.rs`.">
     <meta name="keywords" content="rust, rustlang, rust-lang">
 
     <title>glx.rs.html -- source</title>
@@ -215,8 +215,6 @@
 <span id="173">173</span>
 <span id="174">174</span>
 <span id="175">175</span>
-<span id="176">176</span>
-<span id="177">177</span>
 </pre><pre class='rust '>
 <span class='comment'>// x11-rs: Rust bindings for X11 libraries</span>
 <span class='comment'>// The X11 libraries are available under the MIT license.</span>
@@ -242,12 +240,10 @@
 
 <span class='attribute'>#[<span class='ident'>link</span>(<span class='ident'>name</span><span class='op'>=</span><span class='string'>&quot;GL&quot;</span>)]</span>
 <span class='kw'>extern</span> <span class='string'>&quot;C&quot;</span> {
-  <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>glXChooseFBConfig</span> (<span class='ident'>display</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>Display</span>, <span class='ident'>screen</span>: <span class='ident'>c_int</span>, <span class='ident'>attr</span>: <span class='op'>*</span><span class='kw'>const</span> <span class='ident'>c_int</span>, <span class='ident'>nitems</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_int</span>)
-      <span class='op'>-&gt;</span> <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>GLXFBConfig</span>;
+  <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>glXChooseFBConfig</span> (<span class='ident'>display</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>Display</span>, <span class='ident'>screen</span>: <span class='ident'>c_int</span>, <span class='ident'>attr</span>: <span class='op'>*</span><span class='kw'>const</span> <span class='ident'>c_int</span>, <span class='ident'>nitems</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_int</span>) <span class='op'>-&gt;</span> <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>GLXFBConfig</span>;
   <span class='comment'>// glXChooseVisual</span>
   <span class='comment'>// glXCopyContext</span>
-  <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>glXCreateContext</span> (<span class='ident'>display</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>Display</span>, <span class='ident'>visual_info</span>: <span class='op'>*</span><span class='kw'>const</span> <span class='ident'>XVisualInfo</span>, <span class='ident'>share_context</span>: <span class='ident'>GLXContext</span>,
-      <span class='ident'>direct</span>: <span class='ident'>Bool</span>) <span class='op'>-&gt;</span> <span class='ident'>GLXContext</span>;
+  <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>glXCreateContext</span> (<span class='ident'>display</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>Display</span>, <span class='ident'>visual_info</span>: <span class='op'>*</span><span class='kw'>const</span> <span class='ident'>XVisualInfo</span>, <span class='ident'>share_context</span>: <span class='ident'>GLXContext</span>, <span class='ident'>direct</span>: <span class='ident'>Bool</span>) <span class='op'>-&gt;</span> <span class='ident'>GLXContext</span>;
   <span class='comment'>// glXCreateGLXPixmap</span>
   <span class='comment'>// glXCreateNewContext</span>
   <span class='comment'>// glXCreatePbuffer</span>

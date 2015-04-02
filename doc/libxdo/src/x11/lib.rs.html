@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="rustdoc">
-    <meta name="description" content="Source to the Rust file `/home/snake/.cargo/registry/src/github.com-1ecc6299db9ec823/x11-0.0.15/src/lib.rs`.">
+    <meta name="description" content="Source to the Rust file `/home/snake/.cargo/registry/src/github.com-1ecc6299db9ec823/x11-0.0.21/src/lib.rs`.">
     <meta name="keywords" content="rust, rustlang, rust-lang">
 
     <title>lib.rs.html -- source</title>
@@ -53,6 +53,9 @@
 <span id="11">11</span>
 <span id="12">12</span>
 <span id="13">13</span>
+<span id="14">14</span>
+<span id="15">15</span>
+<span id="16">16</span>
 </pre><pre class='rust '>
 <span class='comment'>// x11-rs: Rust bindings for X11 libraries</span>
 <span class='comment'>// The X11 libraries are available under the MIT license.</span>
@@ -61,7 +64,10 @@
 <span class='attribute'>#<span class='op'>!</span>[<span class='ident'>crate_name</span><span class='op'>=</span><span class='string'>&quot;x11&quot;</span>]</span>
 <span class='attribute'>#<span class='op'>!</span>[<span class='ident'>crate_type</span><span class='op'>=</span><span class='string'>&quot;lib&quot;</span>]</span>
 
+<span class='attribute'>#<span class='op'>!</span>[<span class='ident'>allow</span>(<span class='ident'>non_snake_case</span>)]</span>
 <span class='attribute'>#<span class='op'>!</span>[<span class='ident'>allow</span>(<span class='ident'>non_upper_case_globals</span>)]</span>
+
+<span class='attribute'>#<span class='op'>!</span>[<span class='ident'>feature</span>(<span class='ident'>convert</span>)]</span>
 
 <span class='kw'>extern</span> <span class='kw'>crate</span> <span class='ident'>libc</span>;
 

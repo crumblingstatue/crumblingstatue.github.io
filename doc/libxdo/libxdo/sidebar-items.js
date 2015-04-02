@@ -1,1 +1,1 @@
-initSidebarItems({"enum":[["XDoCreationError","An error that can happen when trying to create an XDo instance."]],"type":[["OpResult","Result of an XDo operation."]],"struct":[["XDo","An XDo instance"]]});
+initSidebarItems({"struct":[["XDo","An XDo instance"]],"type":[["OpResult","Result of an XDo operation."]],"enum":[["XDoCreationError","An error that can happen when trying to create an XDo instance."]]});
