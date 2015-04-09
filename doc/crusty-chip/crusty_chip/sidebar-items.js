@@ -1,0 +1,1 @@
+initSidebarItems({"constant":[["DISPLAY_HEIGHT","The height of the Chip8's display in pixels."],["DISPLAY_WIDTH","The width of the Chip8's display in pixels."]],"struct":[["VirtualMachine","A CHIP-8 virtual machine."]]});
