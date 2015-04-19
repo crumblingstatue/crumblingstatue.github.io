@@ -41,15 +41,15 @@
     </nav>
 
     <section id='main' class="content struct">
-<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>crusty_chip</a>::<wbr><a class='struct' href=''>VirtualMachine</a><wbr></span><span class='out-of-band'><span id='render-detail'>
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>crusty_chip</a>::<wbr><a class='struct' href=''>VirtualMachine</a></span><span class='out-of-band'><span id='render-detail'>
             <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-1492' href='../src/crusty_chip/lib.rs.html#74-87'>[src]</a></span></h1>
+        </span><a id='src-1492' class='srclink' href='../src/crusty_chip/lib.rs.html#74-87'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct VirtualMachine {
     // some fields omitted
 }</pre><div class='docblock'><p>A CHIP-8 virtual machine.</p>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='struct' href='../crusty_chip/struct.VirtualMachine.html' title='crusty_chip::VirtualMachine'>VirtualMachine</a></code></h3><div class='impl-items'><h4 id='method.new' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.new' class='fnname'>new</a>() -&gt; <a class='struct' href='../crusty_chip/struct.VirtualMachine.html' title='crusty_chip::VirtualMachine'>VirtualMachine</a></code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl <a class='struct' href='../crusty_chip/struct.VirtualMachine.html' title='crusty_chip::VirtualMachine'>VirtualMachine</a></code></h3><div class='impl-items'><h4 id='method.new' class='method'><code>fn <a href='#method.new' class='fnname'>new</a>() -&gt; <a class='struct' href='../crusty_chip/struct.VirtualMachine.html' title='crusty_chip::VirtualMachine'>VirtualMachine</a></code></h4>
 <div class='docblock'><p>Constructs a new VirtualMachine.</p>
-</div><h4 id='method.load_rom' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.load_rom' class='fnname'>load_rom</a>(&amp;mut self, rom: <a href='http://doc.rust-lang.org/nightly/std/primitive.slice.html'>&amp;[</a><a href='http://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a><a href='http://doc.rust-lang.org/nightly/std/primitive.slice.html'>]</a>)</code></h4>
+</div><h4 id='method.load_rom' class='method'><code>fn <a href='#method.load_rom' class='fnname'>load_rom</a>(&amp;mut self, rom: <a href='http://doc.rust-lang.org/nightly/std/primitive.slice.html'>&amp;[</a><a href='http://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a><a href='http://doc.rust-lang.org/nightly/std/primitive.slice.html'>]</a>)</code></h4>
 <div class='docblock'><p>Loads a ROM into the VirtualMachine.</p>
 
 <h2 id="arguments" class='section-header'><a
@@ -57,26 +57,26 @@
 <ul>
 <li>rom - ROM to load</li>
 </ul>
-</div><h4 id='method.do_cycle' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.do_cycle' class='fnname'>do_cycle</a>(&amp;mut self)</code></h4>
+</div><h4 id='method.do_cycle' class='method'><code>fn <a href='#method.do_cycle' class='fnname'>do_cycle</a>(&amp;mut self)</code></h4>
 <div class='docblock'><p>Does an emulation cycle.</p>
-</div><h4 id='method.press_key' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.press_key' class='fnname'>press_key</a>(&amp;mut self, key: <a href='http://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a>)</code></h4>
+</div><h4 id='method.press_key' class='method'><code>fn <a href='#method.press_key' class='fnname'>press_key</a>(&amp;mut self, key: <a href='http://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a>)</code></h4>
 <div class='docblock'><p>Presses a key on the hexadecimal keypad.</p>
 
 <p><code>key</code> should be in the range <code>0..15</code>.</p>
-</div><h4 id='method.release_key' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.release_key' class='fnname'>release_key</a>(&amp;mut self, key: <a href='http://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a>)</code></h4>
+</div><h4 id='method.release_key' class='method'><code>fn <a href='#method.release_key' class='fnname'>release_key</a>(&amp;mut self, key: <a href='http://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a>)</code></h4>
 <div class='docblock'><p>Releases a key on the hexadecimal keypad.</p>
 
 <p><code>key</code> should be in the range <code>0..15</code>.</p>
-</div><h4 id='method.decrement_timers' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.decrement_timers' class='fnname'>decrement_timers</a>(&amp;mut self)</code></h4>
+</div><h4 id='method.decrement_timers' class='method'><code>fn <a href='#method.decrement_timers' class='fnname'>decrement_timers</a>(&amp;mut self)</code></h4>
 <div class='docblock'><p>Decrements the sound and delay timers.</p>
 
 <p>They should be decremented at a rate of 60 Hz.</p>
-</div><h4 id='method.display_updated' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.display_updated' class='fnname'>display_updated</a>(&amp;self) -&gt; <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+</div><h4 id='method.display_updated' class='method'><code>fn <a href='#method.display_updated' class='fnname'>display_updated</a>(&amp;self) -&gt; <a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
 <div class='docblock'><p>Returns whether the display has been updated.</p>
-</div><h4 id='method.display' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.display' class='fnname'>display</a>(&amp;self) -&gt; &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.array.html'>[<a href='http://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>; DISPLAY_WIDTH * DISPLAY_HEIGHT]</a></code></h4>
+</div><h4 id='method.display' class='method'><code>fn <a href='#method.display' class='fnname'>display</a>(&amp;self) -&gt; &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.array.html'>[<a href='http://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>; DISPLAY_WIDTH * DISPLAY_HEIGHT]</a></code></h4>
 <div class='docblock'><p>Returns the contents of the display.</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/marker/trait.Copy.html' title='core::marker::Copy'>Copy</a> for <a class='struct' href='../crusty_chip/struct.VirtualMachine.html' title='crusty_chip::VirtualMachine'>VirtualMachine</a></code></h3><div class='impl-items'></div><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../crusty_chip/struct.VirtualMachine.html' title='crusty_chip::VirtualMachine'>VirtualMachine</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../crusty_chip/struct.VirtualMachine.html' title='crusty_chip::VirtualMachine'>VirtualMachine</a></code></h4>
-<h4 id='method.clone_from' class='tymethod'><a class='stability Unstable' title='Unstable: this function is rarely used'></a><code>fn <a href='#tymethod.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/marker/trait.Copy.html' title='core::marker::Copy'>Copy</a> for <a class='struct' href='../crusty_chip/struct.VirtualMachine.html' title='crusty_chip::VirtualMachine'>VirtualMachine</a></code></h3><div class='impl-items'></div><h3 class='impl'><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../crusty_chip/struct.VirtualMachine.html' title='crusty_chip::VirtualMachine'>VirtualMachine</a></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; <a class='struct' href='../crusty_chip/struct.VirtualMachine.html' title='crusty_chip::VirtualMachine'>VirtualMachine</a></code></h4>
+<h4 id='method.clone_from' class='method'><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
 </div></section>
     <section id='search' class="content hidden"></section>
 

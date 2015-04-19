@@ -41,16 +41,16 @@
     </nav>
 
     <section id='main' class="content struct">
-<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>libxdo_sys</a>::<wbr><a class='struct' href=''>xdo</a><wbr></span><span class='out-of-band'><span id='render-detail'>
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>libxdo_sys</a>::<wbr><a class='struct' href=''>xdo</a></span><span class='out-of-band'><span id='render-detail'>
             <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-30' href='../src/libxdo_sys/lib.rs.html#31-45'>[src]</a></span></h1>
+        </span><a id='src-30' class='srclink' href='../src/libxdo_sys/lib.rs.html#31-45'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct xdo {
-    pub xdpy: *mut <a class='struct' href='../x11/xlib/struct.Display.html' title='x11::xlib::Display'>Display</a>,
-    pub display_name: *mut <a class='type' href='../libc/types/os/arch/c95/type.c_char.html' title='libc::types::os::arch::c95::c_char'>c_char</a>,
-    pub charcodes: *mut <a class='struct' href='../libxdo_sys/struct.charcodemap.html' title='libxdo_sys::charcodemap'>charcodemap</a>,
+    pub xdpy: <a href='http://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut <a class='struct' href='../x11/xlib/struct.Display.html' title='x11::xlib::Display'>Display</a></a>,
+    pub display_name: <a href='http://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut <a class='type' href='../libc/types/os/arch/c95/type.c_char.html' title='libc::types::os::arch::c95::c_char'>c_char</a></a>,
+    pub charcodes: <a href='http://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut <a class='struct' href='../libxdo_sys/struct.charcodemap.html' title='libxdo_sys::charcodemap'>charcodemap</a></a>,
     pub charcodes_len: <a class='type' href='../libc/types/os/arch/c95/type.c_int.html' title='libc::types::os::arch::c95::c_int'>c_int</a>,
-    pub modmap: *mut <a class='struct' href='../x11/xlib/struct.XModifierKeymap.html' title='x11::xlib::XModifierKeymap'>XModifierKeymap</a>,
-    pub keymap: *mut <a class='type' href='../x11/xlib/type.KeySym.html' title='x11::xlib::KeySym'>KeySym</a>,
+    pub modmap: <a href='http://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut <a class='struct' href='../x11/xlib/struct.XModifierKeymap.html' title='x11::xlib::XModifierKeymap'>XModifierKeymap</a></a>,
+    pub keymap: <a href='http://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut <a class='type' href='../x11/xlib/type.KeySym.html' title='x11::xlib::KeySym'>KeySym</a></a>,
     pub keycode_high: <a class='type' href='../libc/types/os/arch/c95/type.c_int.html' title='libc::types::os::arch::c95::c_int'>c_int</a>,
     pub keycode_low: <a class='type' href='../libc/types/os/arch/c95/type.c_int.html' title='libc::types::os::arch::c95::c_int'>c_int</a>,
     pub keysyms_per_keycode: <a class='type' href='../libc/types/os/arch/c95/type.c_int.html' title='libc::types::os::arch::c95::c_int'>c_int</a>,
@@ -59,7 +59,20 @@
     pub debug: <a class='type' href='../libc/types/os/arch/c95/type.c_int.html' title='libc::types::os::arch::c95::c_int'>c_int</a>,
     pub features_mask: <a class='type' href='../libc/types/os/arch/c95/type.c_int.html' title='libc::types::os::arch::c95::c_int'>c_int</a>,
 }</pre><h2 class='fields'>Fields</h2>
-<table><tr><td id='structfield.xdpy'><a class='stability Unmarked' title='No stability level'></a><code>xdpy</code></td><td></td></tr><tr><td id='structfield.display_name'><a class='stability Unmarked' title='No stability level'></a><code>display_name</code></td><td></td></tr><tr><td id='structfield.charcodes'><a class='stability Unmarked' title='No stability level'></a><code>charcodes</code></td><td></td></tr><tr><td id='structfield.charcodes_len'><a class='stability Unmarked' title='No stability level'></a><code>charcodes_len</code></td><td></td></tr><tr><td id='structfield.modmap'><a class='stability Unmarked' title='No stability level'></a><code>modmap</code></td><td></td></tr><tr><td id='structfield.keymap'><a class='stability Unmarked' title='No stability level'></a><code>keymap</code></td><td></td></tr><tr><td id='structfield.keycode_high'><a class='stability Unmarked' title='No stability level'></a><code>keycode_high</code></td><td></td></tr><tr><td id='structfield.keycode_low'><a class='stability Unmarked' title='No stability level'></a><code>keycode_low</code></td><td></td></tr><tr><td id='structfield.keysyms_per_keycode'><a class='stability Unmarked' title='No stability level'></a><code>keysyms_per_keycode</code></td><td></td></tr><tr><td id='structfield.close_display_when_freed'><a class='stability Unmarked' title='No stability level'></a><code>close_display_when_freed</code></td><td></td></tr><tr><td id='structfield.quiet'><a class='stability Unmarked' title='No stability level'></a><code>quiet</code></td><td></td></tr><tr><td id='structfield.debug'><a class='stability Unmarked' title='No stability level'></a><code>debug</code></td><td></td></tr><tr><td id='structfield.features_mask'><a class='stability Unmarked' title='No stability level'></a><code>features_mask</code></td><td></td></tr></table></section>
+<table><tr class='stab '>
+                                  <td id='structfield.xdpy'><code>xdpy</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.display_name'><code>display_name</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.charcodes'><code>charcodes</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.charcodes_len'><code>charcodes_len</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.modmap'><code>modmap</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.keymap'><code>keymap</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.keycode_high'><code>keycode_high</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.keycode_low'><code>keycode_low</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.keysyms_per_keycode'><code>keysyms_per_keycode</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.close_display_when_freed'><code>close_display_when_freed</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.quiet'><code>quiet</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.debug'><code>debug</code></td><td></td></tr><tr class='stab '>
+                                  <td id='structfield.features_mask'><code>features_mask</code></td><td></td></tr></table></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>

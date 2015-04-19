@@ -41,13 +41,13 @@
     </nav>
 
     <section id='main' class="content struct">
-<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>libnotify</a>::<wbr><a class='struct' href=''>Context</a><wbr></span><span class='out-of-band'><span id='render-detail'>
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>libnotify</a>::<wbr><a class='struct' href=''>Context</a></span><span class='out-of-band'><span id='render-detail'>
             <a id="collapse-all" href="#">[-]</a>&nbsp;<a id="expand-all" href="#">[+]</a>
-        </span><a id='src-275' href='../src/libnotify/lib.rs.html#71'>[src]</a></span></h1>
+        </span><a id='src-260' class='srclink' href='../src/libnotify/lib.rs.html#71'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct Context;</pre><div class='docblock'><p>The context which within libnotify operates.</p>
 
 <p>Only one context can exist at a time.</p>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><a class='stability Unmarked' title='No stability level'></a><code>impl <a class='struct' href='../libnotify/struct.Context.html' title='libnotify::Context'>Context</a></code></h3><div class='impl-items'><h4 id='method.new' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.new' class='fnname'>new</a>(app_name: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../libnotify/struct.Context.html' title='libnotify::Context'>Context</a>, <a class='enum' href='../libnotify/enum.ContextCreationError.html' title='libnotify::ContextCreationError'>ContextCreationError</a>&gt;</code></h4>
+</div><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl <a class='struct' href='../libnotify/struct.Context.html' title='libnotify::Context'>Context</a></code></h3><div class='impl-items'><h4 id='method.new' class='method'><code>fn <a href='#method.new' class='fnname'>new</a>(app_name: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../libnotify/struct.Context.html' title='libnotify::Context'>Context</a>, <a class='enum' href='../libnotify/enum.ContextCreationError.html' title='libnotify::ContextCreationError'>ContextCreationError</a>&gt;</code></h4>
 <div class='docblock'><p>Create a new context</p>
 
 <p>Arguments:</p>
@@ -55,7 +55,7 @@
 <ul>
 <li>app_name: The name of the application using the context</li>
 </ul>
-</div><h4 id='method.new_notification' class='method'><a class='stability Unmarked' title='No stability level'></a><code>fn <a href='#method.new_notification' class='fnname'>new_notification</a>(&amp;self, summary: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, body: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;&amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;, icon: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;&amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../libnotify/struct.Notification.html' title='libnotify::Notification'>Notification</a>, <a class='enum' href='../libnotify/enum.NotificationCreationError.html' title='libnotify::NotificationCreationError'>NotificationCreationError</a>&gt;</code></h4>
+</div><h4 id='method.new_notification' class='method'><code>fn <a href='#method.new_notification' class='fnname'>new_notification</a>(&amp;self, summary: &amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>, body: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;&amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;, icon: <a class='enum' href='http://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;&amp;<a href='http://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt;) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../libnotify/struct.Notification.html' title='libnotify::Notification'>Notification</a>, <a class='enum' href='../libnotify/enum.NotificationCreationError.html' title='libnotify::NotificationCreationError'>NotificationCreationError</a>&gt;</code></h4>
 <div class='docblock'><p>Creates a new Notification.</p>
 
 <p>Arguments:</p>
@@ -65,7 +65,7 @@
 <li>body: Optional body text</li>
 <li>icon: Optional icon theme icon name or filename</li>
 </ul>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><a class='stability Stable' title='Stable'></a><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/ops/trait.Drop.html' title='core::ops::Drop'>Drop</a> for <a class='struct' href='../libnotify/struct.Context.html' title='libnotify::Context'>Context</a></code></h3><div class='impl-items'><h4 id='method.drop' class='method'><a class='stability Stable' title='Stable'></a><code>fn <a href='#method.drop' class='fnname'>drop</a>(&amp;mut self)</code></h4>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/ops/trait.Drop.html' title='core::ops::Drop'>Drop</a> for <a class='struct' href='../libnotify/struct.Context.html' title='libnotify::Context'>Context</a></code></h3><div class='impl-items'><h4 id='method.drop' class='method'><code>fn <a href='http://doc.rust-lang.org/nightly/core/ops/trait.Drop.html#method.drop' class='fnname'>drop</a>(&amp;mut self)</code></h4>
 </div></section>
     <section id='search' class="content hidden"></section>
 
