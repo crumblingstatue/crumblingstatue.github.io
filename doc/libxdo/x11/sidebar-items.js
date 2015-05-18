@@ -1,1 +1,1 @@
-initSidebarItems({"mod":[["glx",""],["xlib",""]]});
+initSidebarItems({"mod":[["glx",""],["keysym",""],["xcursor",""],["xf86vmode",""],["xlib",""],["xrender",""]]});
