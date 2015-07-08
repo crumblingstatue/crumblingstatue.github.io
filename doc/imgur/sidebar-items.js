@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["Handle","A handle to the imgur API."],["UploadError","Error that can happen on image upload."],["UploadInfo","Information about an uploaded image."]]});
