@@ -1,0 +1,1 @@
+initSidebarItems({"macro":[["try_opt!","Helper macro for unwrapping `Option` values while returning early with an error if the value of the expression is `None`. Can only be used in functions that return `Option` because of the early return of `None` that it provides."]]});
