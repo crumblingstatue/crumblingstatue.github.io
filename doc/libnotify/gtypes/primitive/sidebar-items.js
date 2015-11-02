@@ -1,0 +1,1 @@
+initSidebarItems({"constant":[["FALSE",""],["TRUE",""]],"type":[["gboolean",""],["gchar",""],["gconstpointer",""],["gdouble",""],["gfloat",""],["gint",""],["gintptr",""],["glong",""],["gpointer",""],["gshort",""],["gsize",""],["gssize",""],["guchar",""],["guint",""],["guintptr",""],["gulong",""],["gunichar",""],["gushort",""]]});

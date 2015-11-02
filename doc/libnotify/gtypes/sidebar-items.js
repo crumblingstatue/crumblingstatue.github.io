@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["primitive","Definitions for primitive fundamental types."]],"type":[["GType","An integer type that designates GObject type identifiers."]]});
